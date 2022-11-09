@@ -1,0 +1,191 @@
+9:00 복습
+
+오전 9:14 2022-11-09
+<함수 복습>
+
+감동 ㅠㅠ ❤️
+매개변수 .. 
+ 소괄호 중괄호
+
+
+기본적인 구조를 다 알게 
+
+화살표 함수
+화살표 함수가 1개인 경우 굉장히 유용하게 쓸 수 있을 듯 
+
+2줄이상되면 중괄호 생략하면 절대 x
+중괄호는 코드가 꼭 한줄만 있을 때 중괄호 생략 가능 
+
+코드가 여러줄이면 
+어디서 어디까지 if인지 for인지 개발자가 알려줘야해 
+ㄴ 코드가 2줄이상이면반드시 묶어주어야 합니다. 
+
+코드가 한 줄인 함수 
+
+중괄호, return키워드  생략 가능
+
+
+
+오전 9:19 2022-11-09
+함수 정리 ,
+중괄호, 소괄호 부분 설명해주셔서 좋았당.❤️
+
+----------------------------------------------------------------------
+오전 9:21 2022-11-09 
+
+document : html을 관리하는 객체이다. 
+●
+DOM 객체를 제어하면 HTML 태그 제어 효과 발생
+
+트리구조, DOM트리
+
+한개한개의 객체는 5가지의 특징을 가지고 있는데,
+ex.
+🟨DOM 객체는 5개의 요소로 구성🟨
+프로퍼티
+메서드
+컬렉션
+이벤트 리스터
+CSS3스타일
+
+
+
+●
+
+Document.getElementById(“firstP”).style.color= “red”;
+P는 객체에요
+Id 값으로 dom객체 찾기
+Document.getElementById
+
+●
+DOM객체의 CSS3스타일 동적 변경
+style 객체는 HTML 태그의 CSS3 스타일 시트 정보를 가짐 
+style 객체를 이용하면 이미 출력된 HTML 태그의 모양 변경이 가능
+DOM객체의 style 프로퍼티로 접근
+
+CSS3 스타이리 프로퍼티는 다음과 같이 사용
+backgorund-color ☞backgroundColor
+font-size ☞  fontSize
+
+
+★
+변수명 - 카멜케이스 혹모양으로 만들기
+
+this , 객체인 '나 자신을' 가르키는 것
+
+div 태그 자신의 배경을 orange색으로 변경
+<div onclick = "this.style.backgroundColor = 'orange'">
+클릭이벤트 걸기
+
+
+
+<body>
+<script>
+function change(obj, size, color) {
+obj.style.color = color;
+obj.style.fontSize = size;
+}
+</script>
+<h3>this 활용</h3>
+<hr>
+<button onclick="change(this, '30px', 'red')">버튼</button>
+<button onclick="change(this, '30px', 'blue')">버튼</button>
+<div onclick="change(this, '25px', 'orange')">
+여기를 클릭하면 크기와 색 변경
+</div>
+</body>
+
+ㄴ 색깔로 표현하는 것 좋았다
+
+
+
+p.34의 방법은 잘 사용하지는 않는다.
+
+class 속성으로 DOM 객체 찾기
+
+
+
+P.38
+ID값,  
+
+CLASS값
+
+CSS선택자 - 쿼리   셀렉터 자리 다 넣을 수 있다  
+
+문제점 : 항상 동일한 값이 있으면 첫번째 태그만 찾는다는게 문제점이다.
+
+querySelectorAll 
+모두 다 찾게 된다. 콤마로 여러개를 나열해서 찾을 수 있다는 것.
+콤마 개수는 제한이 없다.
+
+---
+p.45
+문서의 동적 구성
+DOM 객체 동적 생성
+
+var newDIV = document.createElement("div);
+newDIV.innerHTML = "새로 생성된 DIV입니다."
+
+---
+DOM 트리에 삽입
+//
+
+DOM 객체 삭제
+부모가 자식을 잘라내야한다.
+
+
+태그를 동적으로 , 움직일수 있게 만들 수 있다.
+
+
+
+오전 9:46 2022-11-09
+문제풀이시간 
+
+오전 9:55 2022-11-09 
+쉬는시간 10시까지 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
