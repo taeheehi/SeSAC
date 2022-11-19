@@ -1,0 +1,347 @@
+20221116수~ 20221123수 프로젝트 시간 
+
+20221118금
+금 , 수아 강사님 보충강의 첫번째  날 
+
+배운것
+
+
+1.조건문
+2.반복문
+3.배열
+4.고차함수
+5.함수
+
+
+
+1. 조건문
+
+
+
+/*
+조건문
+if ans
+
+
+
+
+*/
+
+
+if(결과가 true나 false 가 나오는 애들을 써줘야한다. )
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+if(a>5){//    &&  나    ||   나 ! 결과가 나오는 것으로 if 자리에 조건을 잘 해줘야 조건문이 잘 실행이 될 것이다.
+
+
+
+if(a>5){//    &&  나    ||   나 ! 결과가 나오는 것으로 if 자리에 조건을 잘 해줘야 조건문이 잘 실행이 될 것이다.
+
+if(a>5// A &&)    {   조건이 true 여야 시작되는 것 }
+else {//if 조건이 false인 경우 실행 }
+
+조건을 여러개를 줘야한다고 또 if 를 사용하면 성능이 떨어지기 때문에 else 로 실행
+
+
+
+else if 
+
+
+
+
+if(조건1)
+
+
+//1. if() else()
+//2. if() - else()
+//2. if() - else if()  - else if() - else if() 
+//2. if() - else if()  - else if() - else if() - else()
+//else 는 항상 꼬랑지 
+
+
+//switch문
+switch(){
+    case 조건1:
+    case 조건2:
+
+}
+
+switch(apple){    + break문 걸어줄 수 있다
+    case "apple": 
+    //apple 일때 하고 싶은 일1 
+    //apple 일때 하고 싶은 일2
+    //종료 : break 를 써서 종료함 
+    
+    case "banana": //banana 일때 하고 싶은 일 
+    //banana 일때 하고 싶은 일1 
+    //banana 일때 하고 싶은 일2
+    //종료 : break 를 써서 종료함 
+    
+    default: // break
+
+
+
+    만약 if 가 하고 싶은일이 1줄이면 괄호를 생략할 수 있다.
+if(조건){
+ console.log("안녕 ")       //이렇게 한 줄 이면 
+}
+
+if(조건)
+console.log("안녕")
+
+if(조건)   console.log("안녕")    // 이렇게 한 줄이면 중괄호를 하지 않아도 되지만 가독성이 떨어지게 된다. 
+
+
+for(조건){
+    console.log()
+}
+
+if(조건)
+
+
+    defaule : //else 일때 와 동일하다.
+}
+
+
+
+
+
+</body>
+</html>
+
+
+2. 반복문
+
+//반복문
+//for문
+for(;;){
+    console.log("test");
+}
+
+🟠무한반복🟠
+for(;;)
+
+
+
+for(변수초기화;반복조건;반복후작업)    반복후작업 = 반복하고나서 하는 작업
+for(var i=0; i<10; i++){
+    console.log(i);
+}
+//1번 반복 = i = 0
+//2번 반복 = i = 1
+//3번 반복 = i = 2
+//4번 반복 = i = 3
+//5번 반복 = i = 4
+
+
+//while()문  : 주로 무한 반복할 때 주로 쓰인다.    - 조건을 true로 만들어주면됨, 아니면 true가 되는 계산식을 해줘야함 .
+while(조건)   for문의 2번째 자리의 있는 조건,즉 반복조건의 내용을 넣어주면 된다.
+while(i<5){
+    console.log(i);
+    i++
+}
+
+for(var i=0; i<5; i++){
+    console.log(i);
+}
+
+
+while(true){
+    //탈출 조건
+    //if문
+    if(탈출 조건){
+        break;
+    }
+}
+
+
+배열 과 for 문은 짝꿍 
+
+
+//do-while()
+do()   do옆에는 바로 중괄호가 온다   
+()에는 주로 조건식이 쓰이게 되는데 do는 조건 이 없고 바로 시작이기 때문에 바로 {}가 시작된다!
+do{
+//하고싶은 일1
+//하고싶은 일2
+//하고싶은 일3
+}while(조건)
+
+//while vs do~while
+//do~while : 최초 1번은 문조건 실행하고 싶을 때   2번째는 조건을    - do while 쓰는 경우 개발 10년에 별로 없다.
+암호 맞추는 문제   : 최초에 1번 : prompt()
+//결과 == 암호   
+
+
+3. 배열
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+//변수 = 1개의 데이터를 저장하는 공간 
+//2개의 데이터 저장 
+
+//변수 1 = 데이터 1 
+//변수 2 = 데이터 2 
+
+
+//1개의 데이터 저장
+//변수 = 데이터1
+
+//2개의 데이터 저장 
+//변수1 = 데이터1
+//변수2 =  데이터2
+
+
+//1000개 데이터 저장해야하는데 ??!!
+//변수1~1000 개 만들고 있을 수 X 
+//배열 = 저장 공간은 1개 → 여러개의 데이터 저장
+var score = [10,]    // 대괄호로 열리고 닫히는 배열! , 로 공간을 나눈다.   원하는 만큼 충분히 저장가능 
+//데이터를 저장하는 이유 ? 쓰려고 
+
+var score =  [10,20,30,40,50]
+console.log(score)
+
+인덱스 번호는 항상 0부터 시작. 주소를 가지고 데이터를 가지고 올 줄 알아야 한다.
+
+console.log(score[0])     //10
+console.log(score[1])     //20
+console.log(score[2])     //30
+console.log(score[0])     //10
+console.log(score[0])     //10
+
+for 문과 배열을 사용하면 짧은 코드로 배열안에 있는 값들을 가져올 수 있다
+
+
+
+langth 라는 프로퍼티, 속성
+
+//배열 +for 문     
+//var score = [10,20,30,40,50]
+for(var i= 0 , i<score.langth; i++){
+console.log(score[i]);   //각각의 번지에 있는 값 빼주세요
+} 
+
+
+
+
+
+//데이터가 없는 배열 
+ var numnber = [];
+ //배열에 데이터 추가
+ number[0] = 100
+ number[1] = 200
+
+//함수 - push(), pop()
+push() : 데이터 추가  (뒷부분에 )
+pop() : 데이터 제거   (뒷부분에 )   - 지정 제거 할 수 없음    - 지정해서 제거하고 싶으면 if문 for문 돌려서 지정해서 제거해야함
+
+사용방법
+배열이름.push(넣어주고 싶은 값)
+
+number.pop   
+
+
+
+if(score[i]==30){
+    console.log(i);
+}
+
+for (var i =0; i<5; ){
+
+바로 
+    if(i%2 == 0)
+}
+어떤 조건 안에서 일반적으로 사용하게 되는데 
+
+
+
+
+
+<!-- 변수이름을 잘 만들어야 한다. (한눈에 읽을 수 있도록 ) -->
+
+
+
+
+
+</body>
+</html>
+
+
+
+4.고차함수
+
+이론과 개념은 알아서 외워주세요 사용하는 방법 forEach()를 이용한 배열 순회
+forEach 특징 break ,continue 안됨 // 건너뛰기, 중간에 멈추는 것 안됨 무조건
+배열의 0번지~ 끝까지 모든 요소를 for문 보다 훨씬 사용하기 편하지만 page8
+함수안에 함수가 들어간 콜백함수 이름이 없는 함수는 익명함수 , 무명함수 ->딱 한
+번 부르고 말거기기에 이름 도 안붙여줌 forEach 는 함수를 다 도는 것이 조건 이름이
+없는 매개변수 처음부터 끝까지 다 돌리세요 forEach numbers.forEach( //콜백함수
+(number) => console.log(number)); // (number) = function(number) +매개변수가
+1개인 콜백함수는 괄호도 생략할 수 있다 따라서 numer =functionI(number) ㅇ 가능
+하지만 매개변수가 2개 일시 꼭 괄호를 작성하여야함 (number1, number2) =
+function(number) 단축화하는 과정이 굉장히 많음 ------ 매개변수는 이름 을
+자유롭게 지을 수 있는데 의미를 담아서 지어주세요~
+numbers.forEach(function(number,index){ console.log("Index : " +index + "Value :
+"+) })
+
+
+
+5. 함수 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+function 함수이름(){
+
+
+//코드1
+//코드2
+
+
+
+}
+
+//ES6 -> 화살표함수 
+function이라는 예약어 쓰지 않고 바로 
+변수 키워드 + 이름
+ex. 
+const 함수이름 = 값      //딱볼때 변수 초기화 하는 모양이랑 똑같이 생겼음 그래서 변수가 아니라 함수선언이라는 것을 알려주기 위해서 값앞에 ()소괄호를 넣어준다. 그리고 화살표를 그려준다 
+
+
+let 함수이름 = 값   // 함수 인지 모름      🔔()모양이 제일 중요//  () 값 이러면 에러가 나오기 떄문에 
+ㅣㄷㅅ
+
+
+
+    
+</body>
+</html>
+
+
