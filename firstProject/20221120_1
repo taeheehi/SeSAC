@@ -161,7 +161,7 @@ html  수정 후 콘솔확인,
 
 이로써 input의 내용을 가져오려면 어떤 property를 찾아봐야 하는지 알게 되었다 . 
 
-🔴console.log()와 console.dir()의 차이
+🔴🔴🔴 console.log()와 console.dir()의 차이 🔴🔴🔴 
 
 console.log()
 ㄴ HTML 과 유사한 트리에서 요소를 보여줌
