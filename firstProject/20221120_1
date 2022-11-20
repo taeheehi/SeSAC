@@ -1,0 +1,230 @@
+#4.0 Input Values (09:48)
+Watch now →
+
+🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈
+
+
+
+1.자바스크립트로 어떻게 사용자를 기억하게 하는지 (새로고침을 하더라도)
+2.시계
+3내 위치와 내위치의 날씨,  Geolocation좌표 따내는 법 , 그리고 알아낸 위치좌표로 사용자가 어느 지역에 있는지, 그 지역 날씨는 어떤지 
+4.바뀌는 배경사진 
+5.무작위로 명언을 받아서 사용자에게 저장ㅎ나느 법 
+6.Todo list 구현 
+
+
+
+자바스크립트는 웹사이트를 인터렉티브하게 만들어준다.
+
+HTML : 폼을 어떻게 작성하는지, 인풋이나 버튼 같은 것들  - head, body가 뭔지 
+CSS : 클래스와 아이디의 차이점이 뭔지, selector가 뭔지 
+
+자바스크립트 역사 #넷스케이프 #10일이 투자된 언어
+좀더 인터렉티브하게 되길 바람.
+
+why js
+
+자바스크립트를 설치한 적이 없지. 왜냐면 자바스크립트는 모든 브라우저에 내장되어 있거든 그래서 설치할 필요가 없는거야 
+ㄴ 바로 이 점이 자바스크립트를 물량면에서 굉장히 강력하게 만들어 주는 것 
+
+안드로이드, 애플, 니 컴퓨터, 내 컴퓨터, 윈도우, 맥, 리눅스
+
+백엔드의 경우, 너가 원하기만 한다면 루비, 파이썬 ,고, 자바 등등 
+원하는 걸 고르면 되지만
+
+프론트엔드의 경우 옵션이 없어  
+너가 프론트엔드에서 배워야 할 건 자바스크립트 하나 뿐이라는 거지 한마디로 대체불가
+
+이건 너에게 좋은 소식이 될 수도, 나쁜 소식이 될 수도 있다
+만약 프론트엔드 엔지니어가 되고 싶은데 자바스크립트는 싫다면 굉장히 나쁜 소식이야 
+CSS를 하기 싫어하면서 프론트엔드 엔지니어를 하는 것 만큼이나 나쁘지.  한마디로 대체불가야. 
+하지만 다른 관점으로 보면, 자바스크립트만 배우면 끝이야. 
+
+
+
+🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈
+
+유저에게 질문 해야해 
+who are you 
+what is your name
+그런 다음에 그 정보들을 어떻게 받을지에 대해서 배우자 
+왜냐면 우리는 아직 그 정보들을 어떻게 받는지 모르거든
+그리고나서 받은 정보를 화면에 표시할거야 
+
+
+html
+우린 아직 정보를 기억하는 법을 몰라 
+JS에는 사실 value를 기억하게 하는 아주 쉬운 방법이 있어
+user의 이름을 기억하는 것처럼
+하지만 모든 것은 HTML에서 시작 되어야 해 
+우선 HTML을 작성한 다음에 거기있는 element들을 끌고 오는 거야
+그런 다음 JS에서 이런저런 작업들을 해주는 거지 
+그럼 input을 생성하는 것부터 시작하자 
+
+<input type="text" placeholder="What is your name?">
+그리고 여기에는Log in이라 적혀있는  button을 만들어 주자
+    <button>Log In</button>
+그런데 , 이 앱에는 inputrhk button이 아주 많을 예정이니까 일믕을 달아주도록 하자 
+ex. user의 이름을 입력할 input이 있어야 되고,
+to-do를 입력할 input도 필요하겠지. 그러니까 이름을 잘 지을 피요가 있어 
+그럼 지금 까지 만든 것들을 div안에 집어넣을 거야 
+그리고 이 div 안에 "form"이란 class를 추가해 줄 거야 or 아이디로 입력해도돼 id ="#form"  . 다만, 여기서 사용한 classname을 다시 사용하면 안된다는 것만 기억해줘
+    <div id="login-form">
+      <input type="text" placeholder="What is your name?" />
+      <button>Log In</button>
+    </div>
+
+js
+그리고 .js파일로 가서 
+
+const loginForm =document
+document에서 찾을 거니까
+여기에 querySelector()또는 getElementById()를 추가해주고
+const loginForm =document.getElementById("login-form")
+
+
+js row:1
+※querySelector()를 사용할 때는 대상이 id인지 명확히 해줘야 해
+왜냐면 querySelector()로는 classname, tagname 모두 검색이 가능하니까. 
+하지만 getElementById()를 사용할 때는 그럴 필요가 없어.
+왜냐면 JS가 내가 id를 찾고 있다는 걸 이미 알고 있기 때문이야. 
+
+참고할 사이트
+https://bobbohee.github.io/2021-02-12/getelementbyid-versus-queryselector
+
+
+js row:2
+이제 내가 하고 싶은 건 input과 button을 끌어오는 거야
+여기서 우리는 두 가지 옵션이 있어  
+그 중 하나를 보자면, const loginInput을 작성한 다음에,
+document에서 찾는 대신에 위에 작성한 loginForm에서 검색을 하는 거야. 
++button에도 똑같이 적용할 수 있어 
+
+
+const loginForm = document.getElementById("login-form");
+ㄴ JS가 이걸 찾았다면 loginForm은 HTML내에 있는 element라는 뜻이야 
+다음으로 할일은 input과 button을 찾는 일인데 
+우리는 이제 이걸 document가 아닌 loginForm안에서 바로 찾을 수 있어 ☞ HTML element . 이말인 즉슨 , HTML element안을 바로 검색 가능하다는 말이다. 좀 더 정밀조사가 가능하다는 말이다. 
+const loginInput = loginForm.querySelector("input");
+const loginInput = loginForm.querySelector("button");
+
+-------------------------------------------------------------
+const loginForm = document.getElementById("login-form");  //document에서 login-form 이름의  요소Element를 찾아오는 loginForm ☞ HTML element
+const loginInput = loginForm.querySelector("input");     
+//document가 아닌 윗줄의 loginForm안에서 바로 찾을 수 있다.
+const loginButton = loginForm.querySelector("button");
+
+/*더 짧게 코드를 작성하기 위해 우리가 할 수있는 다른 방법으로는,
+첫 줄은 지우고 바로 querySelector("#login-form input/button"
+
+ */ 
+
+
+const loginInput = document.querySelector("#login-form input");     
+//document가 아닌 윗줄의 loginForm안에서 바로 찾을 수 있다.
+const loginButton = document.querySelector("#login-form button");
+
+이렇듯 document 또는 하나의 element를 통해서 검색이 가능해. 
+오직 한 element 안에서 찾을 수 있어. 
+-------------------------------------------------------------
+자! 이제 우리는 user가 이 button을 클릭할 때 감지하는 방법을알고 있지 
+
+내가 여기 이름을 적고 클릭했을 때 적어도 이걸 console.log()할 수 있었으면 해 
+ㄴ 추후에 이 value를 저장할 수 있도록 말이야 
+이걸 구현할 방법 : click event를 사용해서 - loginButton 에 연결되어야 한다.  ☞   loginButton.addEventListener("click", onLoginBtnClick)  // lo
+
+
+function 만들기 
+function handleLoginBtnClick(){}
+ㄴ 다른 이름으로 바꾸고 싶다면 btnClick, onLoginClick 등 
+나에게 코드가 더 명확해지는 방향으로 이름지으면 된다. 
+
+function onLoginBtnClick() {}
+
+loginButton.addEventListener("click", onLoginBtnClick);
+
+
+이로써 우린 loginButton에 대한 click을 감지할 준비가 되었다. 
+-------------------------------------------------------------
+이제는 우리는 여기 input창에 입력되는 value를 얻고 싶다.  ☞
+이 텍스트를 콘솔에 표시하고 싶다면 
+ 
+아까 만들어 둔 loginInput 있지?
+
+항상 하듯이 우선 console.dir(oginInput)을 해줄거야.  //input창에 넣은 값을 console에서 확인 
+
+value는 기본적으로 input 안에 있는 텍스트 이다 .
+
+html  수정 후 콘솔확인,  
+     <input value="lalallal"   type="text" placeholder="What is your name?" />
+값이 들어가있는 것을 볼 수 있다.
+
+이로써 input의 내용을 가져오려면 어떤 property를 찾아봐야 하는지 알게 되었다 . 
+
+🔴console.log()와 console.dir()의 차이
+
+console.log()
+ㄴ HTML 과 유사한 트리에서 요소를 보여줌
+
+console.dir()
+ㄴ JSON과 같은 트리에서 요소를 보여줌
+
+
+참고사이트
+https://sondho.tistory.com/50
+
+-------------------------------------------------------------
+function onLoginBtnClick() {
+  console.log(loginInput.value);   //input창에 넣은 값value을 console에서 확인 
+  console.log("click!!!!");
+}
+
+loginButton.addEventListener("click", onLoginBtnClick);
+//loginButton에 대한 click을 감지한다.
+
+
+그런데 문제가 하나 있다.
+console.log("hello", loginInput.value)를 한다고 했을 때, 
+콘솔에 hello랑 value가 표시되는건 확인이 되는데,
+문제는 아무런 값도 입력 안했을 때!★👉 아무런 값도 입력하지 않았을 때도 클릭이 된다는 징조, 우리는 user가 이름을 입력했을 때만 button을 클릭할 수 있게 해야 한다. 
+🟠아마 수많은 if else를 활용해서 뭘 할 수 있는지 알아보도록 하자!
+
+
+🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈
+
+
+🔴🔴🔴 getElementById VS querySelector 🔴🔴🔴
+
+getElementById가 querySelector보다 약 1.2배 빠르다.
+초당 처리하는 실행 횟수를 보면 getElementById가 높은 성능을 보여주고 있다.
+
+※querySelector()를 사용할 때는 대상이 id인지 명확히 해줘야 해
+왜냐면 querySelector()로는 classname, tagname 모두 검색이 가능하니까. 
+하지만 getElementById()를 사용할 때는 그럴 필요가 없어.
+왜냐면 JS가 내가 id를 찾고 있다는 걸 이미 알고 있기 때문이야. 
+
+
+querySelector는 사용하면 안 되는 걸까?
+결론부터 먼저 말하면, 주관적인 의견으로 아니다.
+
+성능(속도)만을 중요하게 생각한다면 사용하지 않는게 맞지만, 생산성과 편의성 등 여러가지 측면을 생각한다면 querySelector를 사용해도 된다.
+
+다양한 선택자
+getElementById는 id 속성에 국한되어 id 속성만 선택자로 사용할 수 있지만, querySelector는 id, class, [data-*=""], input[name=""] 등 다양한 선택자를 사용할 수 있다.
+
+아래 코드에서 querySelector를 사용하면 name 속성으로 element 객체를 가져올 수 있는데 getElementById를 사용하면 해당 element 객체를 가져오기 위해 필요없는 id를 부여해야 한다.
+
+
+마치며, 🙇🏻
+id 요소로 element 객체를 찾을 경우에는 getElementById를 사용하고, 그 외 경우에는 querySelector를 사용하자.
+
+
+🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈
+
+
+
+
+
+
+
+#비쥬얼 스튜디오 코드 태그색상
