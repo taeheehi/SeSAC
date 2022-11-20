@@ -45,7 +45,108 @@ CSS를 하기 싫어하면서 프론트엔드 엔지니어를 하는 것 만큼�
 
 
 
+    <link rel="stylesheet" href="style.css">   <!--CSS파일을 여는 것이 아니라 그 CSS파일을 HTML 파일에서 불러오는 것.-->
+
+ 일반적으로 자바스크립트 파일은 맨 위에서 가져오지 않고 <body>태그 안의 끝에서 한다. 
+  <body>
+    <script src="./app.js"></script>
+  </body>
+</html>
+
+
+브라우저는 HTML을 실행해서, 이 줄을 보고 style이 적용되어야 한다는 것을 알고 브라우저가 CSS를 실행하는 것
+
+엔진이 2개가 돌아가게 된다. (하나는 CSS엔진이고 , 다른 하나는 자바스크립트 엔진 )
+그리고 이 두 가지 모두 브라우저에서 사용이 되는데 브라우저가 실행되어야 하는 파일이 있다는 것을 확인했을 때.
 
 
 
- 
+
+
+#4 [2021 UPDATE] LOGIN
+
+#4.0 Input Values (09:48)
+Watch now →
+
+#4.1 Form Submission (08:38)
+Watch now →
+
+#4.2 Events (10:56)
+Watch now →
+
+#4.3 Events part Two (08:08)
+Watch now →
+
+#4.4 Getting Username (11:12)
+Watch now →
+
+#4.5 Saving Username (07:35)
+Watch now →
+
+#4.6 Loading Username (10:07)
+Watch now →
+
+#4.7 Super Recap (13:58)
+Watch now →
+#5 [2021 UPDATE] CLOCK
+-----------------------------------------------------------
+#5.0 Intervals (05:37)
+Watch now →
+
+#5.1 Timeouts and Dates (08:46)
+Watch now →
+
+#5.2 PadStart (07:42)
+Watch now →
+
+#5.3 Recap (04:44)
+Watch now →
+#6 [2021 UPDATE] QUOTES AND BACKGROUND
+-----------------------------------------------------------
+#6.0 Quotes (10:14)
+Watch now →
+
+#6.1 Background (08:45)
+Watch now →
+
+#6.2 Recap (05:15)
+Watch now →
+#7 [2021 UPDATE] TO DO LIST
+-----------------------------------------------------------
+#7.0 Setup (07:55)
+Watch now →
+
+#7.1 Adding ToDos (07:00)
+Watch now →
+
+#7.2 Deleting To Dos (09:54)
+Watch now →
+
+#7.3 Saving To Dos (07:26)
+Watch now →
+
+#7.4 Loading To Dos part One (11:19)
+Watch now →
+
+#7.5 Loading To Dos part Two (08:28)
+Watch now →
+
+#7.6 Deleting To Dos part One (10:23)
+Watch now →
+
+#7.7 Deleting To Dos part Two (13:04)
+Watch now →
+
+#7.8 Deleting To Dos part Three (05:32)
+Watch now →
+-----------------------------------------------------------
+#8 [2021 UPDATE] WEATHER
+
+#8.0 Geolocation (07:27)
+Watch now →
+
+#8.1 Weather API (14:13)
+Watch now →
+
+#8.2 Conclusions (02:52)
+Watch now →
