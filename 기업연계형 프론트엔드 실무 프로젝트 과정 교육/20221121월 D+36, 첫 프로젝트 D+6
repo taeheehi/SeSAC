@@ -1,0 +1,412 @@
+event 
+시설점검으로 인해 10시 출근
+ㅈㅈㅂ 생일 축하해~
+
+4~7시 보충수업 선생님 목소리 나가셨다 ㅠㅠ
+
+아래는 필기 , 주로 공책으로 하긴 했지만 visual 에 남아있던 쪼가리 필기들 올려두자! 
+1.Class      붕어빵틀, 붕어빵    그게 다야!  +  중복되는 내용들을 빵틀에 담고 각자의 특징들은 빵안에! + 상속
+2.DomEvent   
+3.ㄴ memo
+4. event 
+ 
+get함수 set함수 꼭 기억해주고 () 이거 안붙이는 것도 기억 
+
+
+class Account{
+
+constructor(a, 계좌번호, 잔액){
+    //특징, 속성
+this.이름 = a
+this.계좌번호  = a
+this.이름 = a
+t
+
+
+
+
+
+
+}
+
+
+
+
+
+//행동,함수
+
+
+
+
+}
+
+
+
+기능을 구현하고자 하는 
+객체에게는 전달하지 않고 
+클래스한테만 가지는 고유한 특징 
+왠만한
+
+객체를 생성하지 ㅇ낳아도 호출 가능 
+
+
+객체는 주지 않는 껍데기만 가지고 있는 특징 
+상속하지 않는다는 말은 아니다. 
+
+
+클래스만 가지고 있어야 하는 고유한 값이 있어야 할 것 같아할 떄 사용 하는 
+
+
+정적 메서드
+ 좋은 예  :  math.random 
+
+클래스 특징 중 하나 ㅏ
+접근 제어  - 
+
+너무 너무 중요한 것은 외부에서 공개하지 않도록 막아 놓는 것이 캡슐화 
+너무 중요해서 
+
+
+숨기고 싶은 변수나 함수에게 #만 감추면 숨겨짐 
+#color 변수는 rec1.color방식으로 접근 불가
+ㄴ setter와 getter 을 사용해서 우회하여 접근이 가능하다
+직접적으로는 제어가 불가능 하지만 
+
+
+감춰진 것에 대해서 수정과, 반환하는 방법
+
+
+접근자 프로퍼티 
+어떤 함수 앞에 get , set 붙이면 
+getter함수, 
+setter함수라고 부름 
+
+setting : 업데이팅, 값세팅, 기존의 값을 덮어써버림
+getter : 값을 가지고 오는,리턴, 반환하는  함수다~~  세팅하는 함수 작성하면 눈치코치센스없는 것
+
+
+Rectangle class      #하면 눈에 안보임
+    #this.width = 100
+    #this.height
+
+#test123(){
+    선물
+}
+
+
+rec1.width -> width그게 뭔데요? 안보여요...?
+
+//값을 가지고 올 때 👉 getter()
+get display123(){
+
+//값을 리턴, 반환 
+return #this.width
+}
+
+
+set changeWidth(){
+    #this.width=300
+}
+
+rec1.width =300
+rec1.changeWidth=300
+
+
+//get, set 함수
+//호출 : 객체이름.함수이름       괄호사용 하면 안됨!!! 객체이름()x 함수이름()x
+
+
+rec1.width -> width 그게 뭔데요? 안보여요...?
+rec1.display123() -> this.width
+rec1.test123()  -> this123() ???????
+
+
+
+상속받아 만들어진 클래스의 특징 
+class 클래스이름 extends 부모클래스이름{
+
+
+
+
+}
+
+
+생성자안에 프로퍼티 2개가 들어있네요
+
+
+
+소유주이름이라는 개별적인 속성 
+
+super라는 코드가 가지고 온다 .
+
+constructor
+매개변수 초기화
+
+
+
+부모가 가지고 있는 함수를 가져오고  + 플러스 추가하고 싶은 내용이 있다면
+
+sleep(){
+
+super.sleep();
+console.log("많이 잔다.");
+
+
+}
+
+객체 생성자 함수???
+
+🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴
+
+
+
+
+내부적으로 트리 , 그리고 잇는다 
+
+이 트리로부터 부모자식관계를 파악할수있다
+
+돔트리
+
+DOM객체는 5개의 요소로 구성
+프로퍼티/ 메서드/ 컬렉션/ 이벤트 리스너/ CSS3스타일
+
+각각의 객체들이
+부모자식형제관계로 연결
+
+lastElementChild
+firstElementChild
+
+
+검색어
+바디태그 자식엘리먼트 찾기
+차일드 앨리먼트 카운터
+
+p객체에 스타일을 적용할건데 컬러값을 레드값을 찾아서 넣겠습니다
+p.style.color ="red"
+
+
+innerHTML
+시작태그와 종료 태그 사이에 들어있는 HTML 컨텐츠
+P.innerHTML = "나의 <img src=`puppy.jpg`>강아지입니다."
+
+this키워드 나 자신
+
+나자신의 스타일을 바꿀건데 오렌지로 바꿀거야
+this.style.backgroundCp
+
+<button onclick="change(this,'30px','red')">버튼</button>
+나자신, 지금 버튼인데 30px 고 red로 바꿔조
+
+여러개기때문에 Elements
+
+document.getElementsByTagName()
+태그 네임으로 값을 찾는 것 
+
+배열을 리턴  컬렉션 리턴이 아니라
+
+다큐먼트에 css 셀렉터를 집어 넣는 것 
+아이디 클래스 , 부모자식관계, 부등호 ,띄어쓰기 
+
+css 선택자
+
+
+셀렉터는 딱 한개만 찾아서 리턴을 해준다 
+
+쿼리셀렉터는 딱 1개만 찾아준다
+쿼리셀렉터올은 그 결과가 Nodeslit
+배열 로 반환되기 때문에 
+length사용가능,
+for 
+foreach 
+
+어떤 태그를 하나 만들때 
+태그를 만들어 주는 함수 인데 
+
+
+그 만든 결과를 var newDIV 
+기존에 가지고 있는 트리
+태그만들어진 것이 아닉 ㅗ둘이 별개가 아니고 어느 시점에 
+
+document 
+
+둘은 별개다<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    누구에게연결을 할지 
+    
+    객체를  찾아서 , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+//    createElement("div")
+    var div = <div></div>
+
+//    div.innerHTML = "안녕하세요"
+<div>안녕하세요</div> 
+
+dib.setAttribute("class","main")
+<div class="main">안녕하세요</div>
+
+div.style.color="red"
+
+
+------------------------------------------------------------------
+
+
+이런다고 기존에 있는 트리에 자동으로 붙지 않기 떄문에 
+연결을 시켜줘야 하는데
+
+누구의 자식으로 div로 넣을 것인 가 문제가 발생
+부모를 찾아야 하므로 
+var p =documetn.getElementById("p");  //부모태그 찾는 것 
+p.appendChild(newDiv);
+
+
+DOM객체를 부모의 마지막 자식으로 삽입
+부모.
+
+
+
+<div>
+
+<a href=""></a>
+<p></p>
+<form action=""></form>
+</div>
+
+
+
+var div => 부모 태그 
+div.appendChild(newP)
+디브에 어팬드차일드 함수를 적용시키는 것
+insertBefore(새로운 객체, 기준자식객체)
+
+
+a를 변수화
+insertBefore(newP,a)
+div.inserBefore(newP,form)
+
+
+var a = ~~~~
+부모.removeChild(제거하고싶은 객체)
+
+그냥 내가 많이 만들어 봐야 해 
+
+문서의 동적 구성 
+
+
+-------------------------------------------------------------------------
+
+
+
+
+</body>
+</html>
+
+🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴
+
+
+
+브라우저에는 다양한 70여가지의 이벤트가 발생하는데
+eventlistener는 함수로 만들어서 구성한다
+
+
+이미 이름이 정해져 있음 
+
+on을 앞에다 붙여주는 것들
+
+만드는 방법 3가지
+
+
+<p onmouseover = "this.style.ibackgroundColor = 'orange'"
+onmouseover="this"
+
+자동으로 좌표를 계속 따오고 있음 
+
+
+발생한 이벤트에 대한 처리를 해주는 것이 이벤트 리스너
+
+이벤트는 계속 발생하고 있지만 그 이벤트를 처리해주는 이벤트리스너를 만들어주지 않으면 아무일도 일어나지 않는다.
+
+
+1 HTML에 직접 
+2
+3
+
+
+//onmouseover 리스너로 over()등록
+p.addEventListener("mouseover",over);   (on없이 이벤트 이름만 사용, over()x over '함수이름만')
+
+
+익명함수
+이름없는 함수를 만들어 주면 됨 
+이름을 작명할
+코드가 짧거나 한 곳에서만 사용할 경우, 익명 함수 편리
+
+
+발생한 이벤트에 관련된 다양한 정보를 담은 객체 : 이벤트 객체
+다양한 정보에 대한 값들이 이벤트 객체에 담겨져 있어요
+
+
+만약 객체에대한 정보를 확인하고 싶다면 
+
+관례 e   이벤트 
+
+라디오버튼 name을 그룹 네임을 같게 해야지 한 그룹으로 동일하게 처리가 됨 
+
+
+컬렉션 = 배열
+
+실제 데이터를 처리해야하는 value자리를 
+
+
+각각의 체크박스에 onclick을 달아줄수있다.
+
+
+각각의 라디오 버튼에 onclick을 달아줄 수 있다.
+onclick이 될 때마다 함수를 호출할 수 있다.
+
+select 를 사용하려면 - index값을 이용해야한다는 것 기억해두자 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
