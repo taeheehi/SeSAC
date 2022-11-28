@@ -1,0 +1,160 @@
+오전 9:06 2022-11-28
+
+react 4. 프로퍼티
+
+04 default props
+
+05 props.children
+06 propTypes
+
+값으로는 객체를 받는다 
+PropTypesComponent.propTypes = {
+name : PropTypes.string
+}
+
+부모입장에서 값을 넘기는 데 
+문자열만 제외하고 
+중괄호 해야한다 
+문자열 외 나머지는 다 중괄호 안에 넣어야한다. 
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+
+영화 목록 앱 구현해보기 
+
+문제점 
+1. 만약 출력해야 할 영화 정보가 10000개라면? 
+
+해결법=> map 함수!!
+
+배열 안의 모든 요소들의 값을 변경해서 새로운 배열을 생성하는 함수
+
+배열안의 모든 값들을 변경해서 새로운 배열을 만드는 map 이라는 함수 
+
+
+각각의 아이템들에 X3 
+나온 결과를 새로운 배열을 저장
+
+
+map() 새로운 값을 리턴,  우리는 그걸 저장할 공간을 놔야겠죠
+
+const modifierArr = arr.map(function(element){
+return element *3;
+});
+
+console.log(modifiedArr);
+
+원본배열에 map 이라는 함수를 적용을 하면 
+결과물 = 배열 
+
+
+
+배열에 객체 형식으로 
+데이터는 서버에서 전달 받는 다고 가정, 
+데이터객체 형식으로 배열에 저장 
+function App(){
+const movieList = [
+{
+title : "공조", 
+
+
+
+
+App.js
+const movieList = [...생략]
+return (
+<>
+{
+movieList.map(movie => 
+<MovieComponent title= {movie.title} open = {movie.open} />)
+}
+</>
+
+)
+
+
+--------------------------------------------------------------------------
+🟠위 작업을 만든 이유  👉 배열 컴포넌트를 만들기 위해서 
+
+//숫자형const numberList = [1,2,3,4,5];
+
+//2개 이상의 자료형 
+const mixedList = [1, 'str', {}, function]
+
+🟠배열안의 map을 이용해서 컴포넌트를 뿌려보는 작업 
+
+
+key props 
+배열의 각각의 데이터에 key를 추가하면 된다.
+
+
+배열에 key값을 추가하면 성능 향상에 도움이 됨 
+ㄴ key 값을 정의하여 출력한 배열 컴포넌트를 다시 출력해야 하는 경우, 리액트 엔진이 기존 컴포넌트를 재활용하여 성능을 높일 수 있음 
+
+key props는 리액트 내부에서 사용되는 특수한 props 이기 때문에 하위 컴포넌트에는 전달되지 않는다.
+
+
+map, forEach (매개변수1 , 매개변수2 = 인덱스)
+
+배열에는 유일한 키값을 넣어주어야 한다. 
+
+
+-------------------------------------------------------------------------------------------------
+오늘 배울 것 
+state
+
+
+props   : 일긱 전용 데이터 
+state : 변경 가능 한 값을 state 로 만든다 
+
+state란 갑승ㄹ 저장하거나 변경할 수 잇는 객체
+컴포넌트 내부에서 바뀔 수 있는 값을 의미한다. 
+주로 버튼 클릭과 같은 이벤트와 함께 사용
+
+
+props 값을 전달 받아서 읽기전용으로만 사용 하는 것
+
+
+받기만, 읽기만 할 거야 props 
+state : 값이 읽기 전용이 아니라 계속 바뀌어야 할 때 
+ex. 쇼핑몰의 수량추가   (값이 변경이 되어야 해 )
+댓글 남기기 
+
+
+import React from 'react';
+
+function ChangePropsValue(props){
+let{name} = props
+let name = props.name;
+
+function changeName(){
+name : "React";
+}
+
+return(
+<div> <h1>{props.name}</h1>
+<button onClick = {changeName} 클릭 </button>
+</div>
+);
+};
+
+export default ChangePropsValue;
+
+
+
+
+기본적으로 props 는 읽기 전용 데이터이고, 값을 바꿀 수는 없다.       
+
+
+
+
+
+
+
+
+
+
+
