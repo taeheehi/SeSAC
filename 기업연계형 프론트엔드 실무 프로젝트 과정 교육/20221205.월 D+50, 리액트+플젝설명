@@ -115,3 +115,158 @@ value 가 value
 
 이걸이제 버튼 이벤트로 가지고 와야 함 
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+컴포넌트의 상태를 관리할 떄 사용하는 HOOKS 
+
+useReducer()
+
+
+
+
+함수를 사용하는 이유 : 재사용 하기 위해서 
+
+상태를 유지하는 함수를 따로 떼어놓는 것 
+
+다른 컴포넌트가 필요한다고 하면 재사용이 가능해진다.
+
+
+결과적으로 완전히 동일한 애들이에요.
+
+useReducer()
+useState()
+
+컴포넌트 파일에서 어떤 로직을 분리할 수 있다. 
+
+
+useState 사용
+
+useReducer 사용 
+
+둘의 결과는 똑같은데 
+useReducer 
+무엇을 사용할지는 개발자인 내가 하는 것이다.
+내가 관리하는 값이 
+
+useState() 
+-컴포넌트에서 관리하는 
+useReducer()
+컴포넌트 내부에서 관리해야 하는 값이 별로 되지 않고 
+값이 단순한 숫자, 문자열 , 불리언 등의 값인 경우 
+
+useState()
+
+
+복잡한 구조를 
+
+컴포논ㅌ트 파일 내부에 복잡한 
+
+
+눈으로 보기에 가독성이 굉장히 떨어지게 된다 .
+
+useReducer
+따로 함수로 빼놓던가 파일로 빼놓아서  - 불러오기 쉽게 
+
+
+
+useReducer 나 useState나
+ 둘다 상태관리를 하는 HOOK이다.
+
+
+---------------------------
+주문을 하는 건 Dispatch 
+Action 은 햄버거 주세요 
+
+dispatch 안에 매개변수 action으로 주고 
+"햄버거 주세요 " 라는 액션을 넣어주면 된다.
+
+
+주문을 받아서 처리를 하는 주황색 공간 
+
+
+처리한 결과는 다시 파란색 으로 돌려준다. 
+
+주문 : dispath 란는 함수 
+요청 액션을 action 
+
+reducer 가 방법을 찾아서 결과를 만들어서 
+결과를 리턴을 해준다 
+
+
+const[state, dispatch] = useReducer(reducer, initialState);
+
+[변수, 함수] = 초기값을 설정할 수 있는 useReducer(  ,2번째 매개변수 자리에 초기값을 설정한다.)
+
+state컴퍼넌트 안에서 상태를 사용할 변수이다 
+dispatch : 액션을 발생시키는 함수이다.
+
+reducer : 발생한 처리를 해주는 함수 
+initialState : state의 초기값
+
+
+dispatch() 사용방법
+dispatch({key : value })
+매개변수로 객체를 전달해야한다. 
+{key:value}
+{키 땡떙 밸류 }
+
+reducer 내가 직접 구현해야 하는 함수 
+
+function reducer(state, action){
+// 새로운 상태를 만드는 로직 
+if문 , 조건문, 스위치문 ... 다양한 조건문들 
+
+return 새로운 상태;  // 원하는 조건의 결과만을 return 할  수 있도록 
+}
+
+
+(첫번째 매개변수 : 현재의 상태
+두번째 매개변수 : 객체값으로 , 업데이트할 정보가 있는 action 안에 객체 모양으로 
+return : 새로운 상태의 결과값을 반환해주는 return
+)
+
+countReducer.js   ☞ 일반적으로 따로 파일로 빼 놓아야 별도의 파일로 작성을 해 놓는다 
+
+function countReducer(state, action){
+switch(action.type){    //type이라는 키를 가져와서 케이스 이름과 일치하면 그 결과를 가져와죠
+case 'INCREMENT' :
+return state + 1;
+case 'DECREMENT' :
+return state -1;
+default :   //타입을 잘못가져온 것 같아~ 그냥 기존 값 가져가~
+return state;
+
+}
+
+}
+export default countReducer
+
+
+
+
+컴포넌트가 아니기 때문에 
+컴포넌트 = 화면에 보이는 무언가 내용물 
+카운터 리두서는 단순히 연산을 해주는 것이기 때문에 
+
+🔴
+컴포넌트는 무조건 대문자로 파일명 만들어야 
+하고 
+함수는 화면출력과 전혀 상관 없기 때문에 countReducer
+
+
+
+---
+0이란 초기값은 state라는 변수에 저장되게 됨
+
+주문은 dispatch라는 함수에서 하기로 함 
+
+일반적으로 키 자리의 매개변수는 type 이라고 함
+
+function numUp(){
+dispatch({type})
+
+
+
+
+
+
+
