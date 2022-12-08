@@ -1,0 +1,434 @@
+id가 undefined가 떠요 
+useRef()에 값을 지정을 안했습니다. 꼭 확인하도록 합시다. 
+id 값을 숫자로 넣어주어서 해결 
+
+
+숫자를 넣었더니 
+
+출력이 되었는데 어디서 오류가 났는지 찾는 것이 어려웠다
+ 
+
+useRef 
+current 를 사용해야 한다 .
+
++1 안되서 ++로 넣어주어요
+
+
+---------------------------------------------------
+
+렌더링 = 메모리소비가 그만큼 된다는 건데 
+
+너무 자주 바뀌는 상태값은 Context에 저장하지 않는 것이 좋다 
+
+~상태값 잘 바뀌지 않는 ~
+● 사용자의 언어
+● 로그인 상태 
+● UI테마(다크모드 / 화이트모드)
+
+자주쓰이는 것을 모두다 렌더링 되면  그만큼 메모리 소비가 된다는 말.
+
+
+A 컴포넌트가 APP의 변수를 Props 를 이용해서 값을 연결해주는 
+
+
+depth가 너무 깊어져서 (부모자식관계가 너무 깊어지는데 )
+props drilling 
+
+App.js 에서 
+
+
+쓰지도 않을 값들을 중간에서 받아야 하기 때문에 낭비가 생긴다.
+ 
+
+
+App이라는 컴포넌트가 G에게 바로 값을 전달해주는 방법이 없네
+👉해결책 별도의 공간, Context 를 만들어서 해당 공간에 
+dom tree 
+이게 바로 context   A라는 변수를 저장해 놓고 G에게 전달해주기 
+
+
+
+
+사용하는 방법 
+Context 객체 생성 
+import {createContext} from 'react';
+
+// MyContext 객체 생성
+const MyContext = createContext();
+
+
+●Context 객체 내 Provider 컴포넌트를 통한 데이터 전달
+- Provider 컴포넌트의 하위 컴포넌트는 Context의 데이터에 접근 가능
+
+function App(){
+return}
+
+provider 컴포넌트의 자식으로, 
+받고싶은 
+
+function App()  p[
+
+const value =useContext(접근하고 싶은 영역의 이름)
+
+접근하고 싶은 영역의 이름 
+
+context 영역을 쓸 거면 - provider 을 사용할 애들에게만 
+ 잘 묶어 주어야 한다. 
+
+
+
+
+
+
+---------------------------------------------------------
+별도의 파일로 뺴서 관리
+Context.js
+
+import{ createContext} from "react";
+export const MycontText = createContext (""); 
+
+
+
+
+
+6.
+  + Context
+
+기본값은 
+
+부모가 provider 지붕을 만들어 놓고 
+
+자식을 불러와야지 정상인 코드인데 
+
+<MyContext.Provider>
+ <child1> - 안에  usecontext   
+ <child2> - 안에  usecontext 
+</MyContext.provider>
+
+에러방지 : 하는 법 createContext ("기본값 지정 ")    👉디폴트값지정
+
+
+전체페이지 총괄하는 HomeComponent
+
+데이터 전달은 어떻게?
+
+<heme
+value 자리에는 숫자, 문자 ..  객체 등등 
+
+useContext(ThemeContext)
+
+darkmode : false 
+두번째 객체에는 function 이 들어있다.
+
+
+darkMode ? : 
+
+최초에  다크모드가 false   
+true 면 배경 - 검은색
+
+true false 
+
+
+const togleDarkMode = () => {
+
+}
+
+필요가 없없음녀 굳이 안가져와도 된다. 
+변경하는 상태변경하는 함수코드가 필요없었다.
+
+
+
+
+
+
+최초에 ,마운트 
+
+
+---------------------------------------------
+
+사용자가 필요한 페이지를 서버에 요청함 
+
+전통적인 웹사이트 만드는 방식 
+
+원하는 웹 페이지 찾아서 돌려주는 것 
+
+서버가 준비해주면 
+
+traffic이 너무 많이 걸리거나 
+서버가 힘들어지면 
+user입장에서는 : 페이지가 지연되게 됨.
+
+
+네이버 서버에 트래픽량이 엄청나게 많아짐 
+
+트래픽이 너무 많이 들어가면 서버의 성능에 문제가 생길 수 있다.
+
+
+
+
+서버에 저장도니 값을 화면에 반영하는 동적인 웹 문서 도구 개발 
+ㄴ 좀 더 빠르게 
+
+요새는 
+
+html 은 딱 하나만 주고 
+자바스크립트로 제어 해서 
+
+프로젝트 폴더 내에 - 퍼블릭 안에 -  index.html
+
+
+
+root에 자식으로 들어갈 애들 
+
+
+<div id = "root">
+
+</div>
+
+
+
+요즘에는 
+HTML은 1개고 
+나머지는 JSON 파일로 해서 
+singtel page application 으로 하게 된다 .
+
+ㄴ 장점 : 돔트리를 다시 그릴 일이 없기 때문에  //  페이지 전환 속도가 엄청나게 빠르다 
+html 이 한장이라 single 
+
++주소가 변경이 되어도 서버에 추가로 웹 문서를 요청하는 작업이 필요가 없다 .
+
+
+주소가 바뀌면 보통 페이지도 새롭(html도 새롭게 만들어 주어야) 게 만들어져야 하는데 
+
+👉결론적으로 속도가 빠르다
+
+단점 : 모든 페이지를 자바스크립트로 제어를 하게 된다..
+
+프로젝트 규모가 커지먼 js파일이 엄청나게 만들어지기 때문에 유지보수가 힘들어진다. 
+
+사용자가 시
+
+
+렌더링: 안불러도 되는데 계속 부르게 되는 , 성능적이 문제도  (다양한 훅들을 이용해서 처리를 해야한다.)4
+
+페이지 로딩 시, 사용자가 실제로 방문하지 않을수도 있는 페이지의 스크립트까지 불러오게 된다.
+
+
+html 파일 
+
+
+오전 10:55 2022-12-08/
+
+----------------------------------------------------
+
+
+오전 11:18 2022-12-08
+
+
+페이지 이동 하는 것을 라우터라고 한다.
+
+
+
+메인페이지 , '홈'페이지, 최상단 페이지, 인덱스페이지 
+
+
+주소 요청이 들어오면 
+const router = createBrowserRouter([
+{
+path : "/",
+element  : <div>Home</div>,
+div에 Home이라고 써서 보여줘 
+errorElement : <div>PPage Not Found</div>
+}
+]);
+
+내부적으로 다양한 키와 값들이 있는데 
+페이지의 path 에 따라서 
+
+라우터를 하나 만들어서 변수에 저장을 잘 해놓으려고 
+
+가져다 쓰려고 
+
+
+변수에 잘 저장해 놓은 거잖아요 
+
+const App 
+
+App이라는 컴포넌트에서요 
+
+const App = () => {
+return <RouterProvider router={router} />;
+};
+router은 고정이다 
+
+
+index페이지 locahost:3000
+
+관리하지 않는 로그인 페이지 
+
+
+-------------------------------------------------
+
+
+const AddUser =() =>
+
+
+
+
+const [useList , dispatch ] = useReducer (reducer, initialState);
+const [newUser, setNewUser] = useState({});
+새로운 유저를 받으면 useState안에 객체 형태로 저장하게 하는 코드 
+
+return(
+<>
+
+
+
+
+
+</>
+
+changeHandler가 하는 일이 동일하다면
+
+dispatch - 
+=
+statae끌어올리기 
+
+
+
+
+
+
+
+
+)
+
+const {} = props ;
+구조분해 할당 
+
+
+제거는 reducer가 
+
+<button  className = "deleteBtn"
+onClick = {() => dispatch ({type : "deleteMember", username:})}
+
+member :  []
+ 배열인데, 객체들로 내용들을 추가하고 싶어 .
+
+function changeHandler(e){
+setNew((prevState)=> ({...prevState}))}
+
+
+
+----------------------------------------------------------
+
+a 태그를 사용하면 싹 다 초기화 되버리는데 
+
+
+link 태그를 사용하면 일부영역만 초기화 된다는 
+
+
+
+전체페이지가 
+리 렌더링이 되면 - 싹 다 초기화가 되는 문제점이 생기기 때문에 
+a 태그를 사용하면 브라우저가 - 싹 다 초기화 하게 만든다 
+
+
+Link 컴포넌트를 이용하여 페이지 이동이 가능하다 .
+
+Link 를 사용한다 .  
+
+
+
+<Link to ="원하는 경로 주소 " >링크이름 </Link>
+
+css를 어떻게 적용할까 ? 
+
+
+
+
+Link 는 a 와 같다. 
+
+.header a:hover
+
+
+
+--------------------------------------------------------
+
+
+
+outlet  - react 명명 
+menu - 사용자 명명 태그 
+
+
+
+
+
+인덱스 페이지 접속들어오면은 
+루트를 보여줘 
+공식문서에서 이렇게 하라고 
+
+셋팅을 
+children 영역에서 - 페이지 세팅을 하면 됨 
+
+메뉴가 여러개기 때문에 페이지도 여러개 나오는데 이를 
+👉children 영역을 배열로 감싸주면 된다. 
+
+배열로 감싸주고 객체로 넣어주면 된다.
+
+children : [
+{index : true, element : <Home/> },
+{path : "/product", element : </Product/>}
+
+]
+index : true     =   means   인덱스 맞니 ?    = /   ?  
+
+path : "/product"  경로가 /product 란 경로가 들어오면은 
+요소로 element : </Product/> 를 보여주면 된다. 
+
+
+
+
+------------------------------------------------------------------
+
+라우터  - 버전 업데이트가 매우 빠르다 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+객체안에 있는 걸 변수로써 왔다갔다 하는 것 : 비구조화 할당
+
+플러그인
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
