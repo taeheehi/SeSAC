@@ -419,148 +419,90 @@ $ node 파일명.js
 -------------------------------------
 인터페이스는 자바스크립트 코드로 컴파일되지 않는다.(조심 , 내필기) 
 🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵
+🤗예습반 노션(일정 확인 및 스터디 일지 기록용) 
+https://www.notion.so/yuuulya/daac0e9a58f84711b960f9e1f63cb1b5
 
-🔴
-<자바스크립트 인강>
+ 
+🔍원하는 기능을 검색해 볼 때 유용한 사이트 
+1. MDN 
+https://developer.mozilla.org/ko/
+
+2. devdocs
+https://devdocs.io/
+
+
+🟡자바스크립트 강의 추천 
+1. 드림코딩 - 자바스크립트 마스터(새싹 계정 로그인 필요) 
+https://academy.dream-coding.com/courses/javascript
+
+2. 드림코딩 - 자바스크립트 기초 강의 (유튜브 무료강의, 주로 개념관련 내용이 많음) 
+https://youtube.com/playlist?list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2
+
+3. 코딩앙마 - 자바스크립트 [기초] 강좌 100분 완성(유튜브 무료강의) 
+https://youtu.be/KF6t61yuPCY
+
+4. 코딩앙마 - 자바스크립트 [중급] 강좌 140분 완성 (유튜브 무료 강의) 
+https://youtu.be/4_WLS9Lj6n4
+
+5. 생활코딩 - 자바스크립트 입문 수업 (유튜브 무료 강의) 
+https://youtube.com/playlist?list=PLuHgQVnccGMA4uSig3hCjl7wTDeyIeZVU
+
+6. 유노코딩 - 입문자를 위한 자바스크립트 기초 (유튜브 무료강의) 
+https://youtube.com/playlist?list=PLFeNz2ojQZjv41Q5cCw8blOpGTTrZS5PU
+
+7. 제로초 - ES2021 자바스크립트 강좌 (유튜브 무료강의)
+https://youtube.com/playlist?list=PLcqDmjxt30RvEEN6eUCcSrrH-hKjCT4wt
+
+
+8. 예습스터디 코딩알려주는 누나_자바스크립트 인강
 https://www.udemy.com/course/codingnoona/
 ㄴ혼자배우는 자바스크립트: 기본부터 포트폴리오까지 한번에 끝내기
 
-
+9.바닐라 JS로 크롬 앱 만들기, 전에 했던 누나강의에서 투두 만들었던거의 업그레이드 버전인 강의입니다! 객체도 쓰고 localstorage에 데이터 저장도 하는 단계가 있어 도움이 될거 같아요
 https://nomadcoders.co/javascript-for-beginners
-ㄴ 바닐라 JS로 크롬 앱 만들기, 전에 했던 누나강의에서 투두 만들었던거의 업그레이드 버전인 강의입니다! 객체도 쓰고 localstorage에 데이터 저장도 하는 단계가 있어 도움이 될거 같아 공유해용 
 
 
+🟡(자바스크립트 사이트) : JS 개념이 카테고리별로 잘 되어있습니다
 https://ko.javascript.info/
-ㄴJS 개념이 카테고리별로 잘 되어있습니다
-
-🔴
 
 
 
+🔴 리액트
+0.유데미 - 한입으로 잘라먹는 리액트 인터넷 강의
+https://www.udemy.com/course/winterlood-react-basic/
+
+1.*벨로퍼트(리액트를 다루는 기술 저자)와 함께하는 모던 리액트
+https://react.vlpt.us/
+
+2.*리액트 공식 사이트
+https://ko.reactjs.org/
+
+3.저희 지금 듣고 있는 리액트 강의 강사님 깃헙인데요! 강의 내용을 스크립트로 정리한 것처럼 상세히 적혀있습니다. 강의 들으면서 내용 정리하느라 시간 오래 걸리신다면 도움이 될 것 같아서 공유합니다.(by 옥주희님)
+https://github.com/winterlood/winterlood_react_based_on_javascript
+
+
+🔵그 외 사이트
+1.vscode에서 단축어 커스텀하는 방법입니당 
 https://ux.stories.pe.kr/m/290
-ㄴvscode에서 단축어 커스텀하는 방법입니당 
 
+2.화면에 보이는 css 정보 알려주는 확장 프로그램입니다!(vs code)
 https://chrome.google.com/webstore/detail/cssviewer/ggfgijbpiheegefliciemofobhmofgce?hl=ko
-ㄴ아까 강사님과 크롬에 react developer tools깔때 봤는데 거 깔아두셨길래 봣는데 화면에 보이는 css 정보 알려주는 확장 프로그램입니다!
 
-
+3.이건 font 알려주는 거였답니다
 https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm/related
-ㄴ이건 font 알려주는 거였답니다
 
+4.쿼리란 무엇인가
 https://hengbokhan.tistory.com/133
-ㄴ 쿼리란 무엇인가
 
-책은 
-[리액트를 다루는 기술]
+5.올해 카카오 컨퍼런스 어제 열렸었네요!! 올해는 10월에 있었던 장애 회고 트랙도 있어서 관심 있으신 분들 시간 날 떄 보시면 좋을 것 같아요 (by고석영님)
+https://if.kakao.com/
 
 
-12월 1일 부터 
+🟠책 
+ [리액트를 다루는 기술]
+
 
 
 🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵
-예습반 노션(일정 확인 및 스터디 일지 기록용) 
-https://www.notion.so/yuuulya/daac0e9a58f84711b960f9e1f63cb1b5
 
- 
-🔍원하는 기능을 검색해 볼 때 유용한 사이트 
-1. MDN 
-https://developer.mozilla.org/ko/
-
-2. devdocs
-https://devdocs.io/
-
-
-
-❣️자바스크립트 강의 추천 
-1. 드림코딩 - 자바스크립트 마스터(새싹 계정 로그인 필요) 
-https://academy.dream-coding.com/courses/javascript
-
-2. 드림코딩 - 자바스크립트 기초 강의 (유튜브 무료강의, 주로 개념관련 내용이 많음) 
-https://youtube.com/playlist?list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2
-
-3. 코딩앙마 - 자바스크립트 [기초] 강좌 100분 완성(유튜브 무료강의) 
-https://youtu.be/KF6t61yuPCY
-
-4. 코딩앙마 - 자바스크립트 [중급] 강좌 140분 완성 (유튜브 무료 강의) 
-https://youtu.be/4_WLS9Lj6n4
-
-5. 생활코딩 - 자바스크립트 입문 수업 (유튜브 무료 강의) 
-https://youtube.com/playlist?list=PLuHgQVnccGMA4uSig3hCjl7wTDeyIeZVU
-
-6. 유노코딩 - 입문자를 위한 자바스크립트 기초 (유튜브 무료강의) 
-https://youtube.com/playlist?list=PLFeNz2ojQZjv41Q5cCw8blOpGTTrZS5PU
-
-7. 제로초 - ES2021 자바스크립트 강좌 (유튜브 무료강의)
-https://youtube.com/playlist?list=PLcqDmjxt30RvEEN6eUCcSrrH-hKjCT4wt
-
-ㄴ 예습스터디 카톡내용 정리 중🔴예습반 노션(일정 확인 및 스터디 일지 기록용) 
-https://www.notion.so/yuuulya/daac0e9a58f84711b960f9e1f63cb1b5
-
- 
-🔍원하는 기능을 검색해 볼 때 유용한 사이트 
-1. MDN 
-https://developer.mozilla.org/ko/
-
-2. devdocs
-https://devdocs.io/
-
-
-
-❣️자바스크립트 강의 추천 
-1. 드림코딩 - 자바스크립트 마스터(새싹 계정 로그인 필요) 
-https://academy.dream-coding.com/courses/javascript
-
-2. 드림코딩 - 자바스크립트 기초 강의 (유튜브 무료강의, 주로 개념관련 내용이 많음) 
-https://youtube.com/playlist?list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2
-
-3. 코딩앙마 - 자바스크립트 [기초] 강좌 100분 완성(유튜브 무료강의) 
-https://youtu.be/KF6t61yuPCY
-
-4. 코딩앙마 - 자바스크립트 [중급] 강좌 140분 완성 (유튜브 무료 강의) 
-https://youtu.be/4_WLS9Lj6n4
-
-5. 생활코딩 - 자바스크립트 입문 수업 (유튜브 무료 강의) 
-https://youtube.com/playlist?list=PLuHgQVnccGMA4uSig3hCjl7wTDeyIeZVU
-
-6. 유노코딩 - 입문자를 위한 자바스크립트 기초 (유튜브 무료강의) 
-https://youtube.com/playlist?list=PLFeNz2ojQZjv41Q5cCw8blOpGTTrZS5PU
-
-7. 제로초 - ES2021 자바스크립트 강좌 (유튜브 무료강의)
-https://youtube.com/playlist?list=PLcqDmjxt30RvEEN6eUCcSrrH-hKjCT4wt예습반 노션(일정 확인 및 스터디 일지 기록용) 
-https://www.notion.so/yuuulya/daac0e9a58f84711b960f9e1f63cb1b5
-
- 
-🔍원하는 기능을 검색해 볼 때 유용한 사이트 
-1. MDN 
-https://developer.mozilla.org/ko/
-
-2. devdocs
-https://devdocs.io/
-
-
-
-❣️자바스크립트 강의 추천 
-1. 드림코딩 - 자바스크립트 마스터(새싹 계정 로그인 필요) 
-https://academy.dream-coding.com/courses/javascript
-
-2. 드림코딩 - 자바스크립트 기초 강의 (유튜브 무료강의, 주로 개념관련 내용이 많음) 
-https://youtube.com/playlist?list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2
-
-3. 코딩앙마 - 자바스크립트 [기초] 강좌 100분 완성(유튜브 무료강의) 
-https://youtu.be/KF6t61yuPCY
-
-4. 코딩앙마 - 자바스크립트 [중급] 강좌 140분 완성 (유튜브 무료 강의) 
-https://youtu.be/4_WLS9Lj6n4
-
-5. 생활코딩 - 자바스크립트 입문 수업 (유튜브 무료 강의) 
-https://youtube.com/playlist?list=PLuHgQVnccGMA4uSig3hCjl7wTDeyIeZVU
-
-6. 유노코딩 - 입문자를 위한 자바스크립트 기초 (유튜브 무료강의) 
-https://youtube.com/playlist?list=PLFeNz2ojQZjv41Q5cCw8blOpGTTrZS5PU
-
-7. 제로초 - ES2021 자바스크립트 강좌 (유튜브 무료강의)
-https://youtube.com/playlist?list=PLcqDmjxt30RvEEN6eUCcSrrH-hKjCT4wt
-
-예습스터디 카톡내용 정리 중 
-🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵🟡🔵
 
